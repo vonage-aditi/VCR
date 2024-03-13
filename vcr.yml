@@ -1,0 +1,16 @@
+project:
+  name: confluence-vcr-guide
+instance:
+  name: dev
+  runtime: nodejs16
+  region: aws.euw1
+  application-id: a9e16bf6-be00-4a7a-abe7-86bb56bf0906
+  entrypoint: [node, server.js]
+  environment:
+    - name: YOURVAR1
+      value: "something-secret"
+    - name: YOURVAR2
+      value: "string value"
+debug:
+  name: debug
+  entrypoint: [node, server.js]
